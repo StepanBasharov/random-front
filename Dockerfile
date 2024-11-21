@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json yarn.lock ./
 
 # Устанавливаем зависимости
-RUN yarn install
+RUN npm install
 
 # Копируем все файлы приложения в контейнер
 COPY . .
